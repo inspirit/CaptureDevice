@@ -1,21 +1,20 @@
 package ru.inspirit.asfeat.capture 
 {
-	/**
-	 * Just simple device info
-	 * u can trust only the name ;)
-	 * @author Eugene Zatepyakin
-	 */
-	public final class CaptureDeviceInfo 
-	{
-		public var name:String = '';
-		public var available:Boolean = false;
-		public var connected:Boolean = false;
-		
-		public function CaptureDeviceInfo() 
-		{
-			
-		}
-		
-	}
+    /**
+     * Just simple device info
+     * u can trust only the name ;)
+     * @author Eugene Zatepyakin
+     */
+    public final class CaptureDeviceInfo 
+    {
+        public var name:String = '';
+        public var available:Boolean = false;
+        public var connected:Boolean = false;
+        
+        public function CaptureDeviceInfo() 
+        {
+            
+        }
+    }
 
 }
