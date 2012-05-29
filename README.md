@@ -3,7 +3,7 @@
 	
 	Features
 	--------
-	  * Windows (Direct Show) and Mac (QTkit) support
+	  * Windows (Direct Show), Mac (QTkit), iOS and Android support
 	  * Multiple cameras support
 	  * Update only on new frame
 	  
