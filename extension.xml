@@ -1,0 +1,41 @@
+<extension xmlns="http://ns.adobe.com/air/extension/3.1">
+  <id>ru.inspirit.capture</id>
+  <versionNumber>1.0</versionNumber>
+  <platforms>
+	<platform name="Windows-x86">
+		<applicationDeployment>
+			<nativeLibrary>capane.dll</nativeLibrary>
+			<initializer>captureInitializer</initializer>
+			<finalizer>captureFinalizer</finalizer>
+		</applicationDeployment>
+	</platform>
+	 <platform name="MacOS-x86">
+		 <applicationDeployment>
+			 <nativeLibrary>captureOSX.framework</nativeLibrary>
+			 <initializer>captureInitializer</initializer>
+			 <finalizer>captureFinalizer</finalizer>
+		 </applicationDeployment>
+	</platform>
+    <platform name="iPhone-ARM">
+      <applicationDeployment>
+        <nativeLibrary>libcaptureIOS.a</nativeLibrary>
+        <initializer>captureInitializer</initializer>
+        <finalizer>captureFinalizer</finalizer>
+      </applicationDeployment>
+    </platform>
+	 <!--platform name="Android-ARM">
+      <applicationDeployment>
+        <nativeLibrary>libcapture.so</nativeLibrary>
+        <initializer>captureInitializer</initializer>
+        <finalizer>captureFinalizer</finalizer>
+      </applicationDeployment>
+    </platform-->
+    <platform name="Android-ARM">
+      <applicationDeployment>
+        <nativeLibrary>capture.jar</nativeLibrary>
+        <initializer>ru.inspirit.capture.CaptureAndroid</initializer>
+        <finalizer>ru.inspirit.capture.CaptureAndroid</finalizer>
+      </applicationDeployment>
+    </platform>
+  </platforms>
+</extension>

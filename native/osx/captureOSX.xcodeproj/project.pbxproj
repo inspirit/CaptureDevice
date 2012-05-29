@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E3220C4150D083100CCBE70 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3220C3150D083100CCBE70 /* Cocoa.framework */; };
+		5E3220CE150D083100CCBE70 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E3220CC150D083100CCBE70 /* InfoPlist.strings */; };
+		5E32214D150D13E700CCBE70 /* Adobe AIR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E32214C150D13E700CCBE70 /* Adobe AIR.framework */; };
+		5EAE35731524E5FB0092DE12 /* Capture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE35691524E5FB0092DE12 /* Capture.cpp */; };
+		5EAE35741524E5FB0092DE12 /* Capture.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EAE356A1524E5FB0092DE12 /* Capture.h */; };
+		5EAE35751524E5FB0092DE12 /* CaptureANE.c in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE356B1524E5FB0092DE12 /* CaptureANE.c */; };
+		5EAE35761524E5FB0092DE12 /* CaptureConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EAE356C1524E5FB0092DE12 /* CaptureConfig.h */; };
+		5EAE35771524E5FB0092DE12 /* CaptureSurface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE356D1524E5FB0092DE12 /* CaptureSurface.cpp */; };
+		5EAE35781524E5FB0092DE12 /* CaptureSurface.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EAE356E1524E5FB0092DE12 /* CaptureSurface.h */; };
+		5EAE35791524E5FB0092DE12 /* CCapture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE356F1524E5FB0092DE12 /* CCapture.cpp */; };
+		5EAE357A1524E5FB0092DE12 /* CCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EAE35701524E5FB0092DE12 /* CCapture.h */; };
+		5EAE357B1524E5FB0092DE12 /* CCaptureConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EAE35711524E5FB0092DE12 /* CCaptureConfig.h */; };
+		5EAE357C1524E5FB0092DE12 /* FlashRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EAE35721524E5FB0092DE12 /* FlashRuntimeExtensions.h */; };
+		5EAE357F1524E6150092DE12 /* CaptureImplQtKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EAE357D1524E6150092DE12 /* CaptureImplQtKit.h */; };
+		5EAE35801524E6150092DE12 /* CaptureImplQtKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE357E1524E6150092DE12 /* CaptureImplQtKit.mm */; };
+		5EC23613151A58C800F3FDA7 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC23612151A58C800F3FDA7 /* QTKit.framework */; };
+		5EC23615151A5A8300F3FDA7 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC23614151A5A8300F3FDA7 /* CoreVideo.framework */; };
+		5EC23617151A5B0800F3FDA7 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC23616151A5B0800F3FDA7 /* ApplicationServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5E3220C0150D083100CCBE70 /* captureOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = captureOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E3220C3150D083100CCBE70 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5E3220C6150D083100CCBE70 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5E3220C7150D083100CCBE70 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5E3220C8150D083100CCBE70 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5E3220CB150D083100CCBE70 /* captureOSX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "captureOSX-Info.plist"; sourceTree = "<group>"; };
+		5E3220CD150D083100CCBE70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5E3220CF150D083100CCBE70 /* captureOSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "captureOSX-Prefix.pch"; sourceTree = "<group>"; };
+		5E32214C150D13E700CCBE70 /* Adobe AIR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Adobe AIR.framework"; path = "/Volumes/Work/AdobeAIRSDK/runtimes/air/mac/Adobe AIR.framework"; sourceTree = "<absolute>"; };
+		5EAE35691524E5FB0092DE12 /* Capture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Capture.cpp; path = ../src/Capture.cpp; sourceTree = "<group>"; };
+		5EAE356A1524E5FB0092DE12 /* Capture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Capture.h; path = ../src/Capture.h; sourceTree = "<group>"; };
+		5EAE356B1524E5FB0092DE12 /* CaptureANE.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CaptureANE.c; path = ../src/CaptureANE.c; sourceTree = "<group>"; };
+		5EAE356C1524E5FB0092DE12 /* CaptureConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CaptureConfig.h; path = ../src/CaptureConfig.h; sourceTree = "<group>"; };
+		5EAE356D1524E5FB0092DE12 /* CaptureSurface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CaptureSurface.cpp; path = ../src/CaptureSurface.cpp; sourceTree = "<group>"; };
+		5EAE356E1524E5FB0092DE12 /* CaptureSurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CaptureSurface.h; path = ../src/CaptureSurface.h; sourceTree = "<group>"; };
+		5EAE356F1524E5FB0092DE12 /* CCapture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCapture.cpp; path = ../src/CCapture.cpp; sourceTree = "<group>"; };
+		5EAE35701524E5FB0092DE12 /* CCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCapture.h; path = ../src/CCapture.h; sourceTree = "<group>"; };
+		5EAE35711524E5FB0092DE12 /* CCaptureConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCaptureConfig.h; path = ../src/CCaptureConfig.h; sourceTree = "<group>"; };
+		5EAE35721524E5FB0092DE12 /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlashRuntimeExtensions.h; path = ../src/FlashRuntimeExtensions.h; sourceTree = "<group>"; };
+		5EAE357D1524E6150092DE12 /* CaptureImplQtKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CaptureImplQtKit.h; path = ../src/impl/CaptureImplQtKit.h; sourceTree = "<group>"; };
+		5EAE357E1524E6150092DE12 /* CaptureImplQtKit.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CaptureImplQtKit.mm; path = ../src/impl/CaptureImplQtKit.mm; sourceTree = "<group>"; };
+		5EAE35861524E8990092DE12 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5EAE358A1524E8990092DE12 /* captureIOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "captureIOS-Prefix.pch"; sourceTree = "<group>"; };
+		5EAE358B1524E8990092DE12 /* captureIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = captureIOS.h; sourceTree = "<group>"; };
+		5EAE358C1524E8990092DE12 /* captureIOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = captureIOS.m; sourceTree = "<group>"; };
+		5EC23612151A58C800F3FDA7 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+		5EC23614151A5A8300F3FDA7 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		5EC23616151A5B0800F3FDA7 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E3220BC150D083100CCBE70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EC23617151A5B0800F3FDA7 /* ApplicationServices.framework in Frameworks */,
+				5EC23615151A5A8300F3FDA7 /* CoreVideo.framework in Frameworks */,
+				5EC23613151A58C800F3FDA7 /* QTKit.framework in Frameworks */,
+				5E3220C4150D083100CCBE70 /* Cocoa.framework in Frameworks */,
+				5E32214D150D13E700CCBE70 /* Adobe AIR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E3220B4150D083100CCBE70 = {
+			isa = PBXGroup;
+			children = (
+				5EAE357D1524E6150092DE12 /* CaptureImplQtKit.h */,
+				5EAE357E1524E6150092DE12 /* CaptureImplQtKit.mm */,
+				5EAE35691524E5FB0092DE12 /* Capture.cpp */,
+				5EAE356A1524E5FB0092DE12 /* Capture.h */,
+				5EAE356B1524E5FB0092DE12 /* CaptureANE.c */,
+				5EAE356C1524E5FB0092DE12 /* CaptureConfig.h */,
+				5EAE356D1524E5FB0092DE12 /* CaptureSurface.cpp */,
+				5EAE356E1524E5FB0092DE12 /* CaptureSurface.h */,
+				5EAE356F1524E5FB0092DE12 /* CCapture.cpp */,
+				5EAE35701524E5FB0092DE12 /* CCapture.h */,
+				5EAE35711524E5FB0092DE12 /* CCaptureConfig.h */,
+				5EAE35721524E5FB0092DE12 /* FlashRuntimeExtensions.h */,
+				5E3220C9150D083100CCBE70 /* capture */,
+				5EAE35881524E8990092DE12 /* captureIOS */,
+				5E3220C2150D083100CCBE70 /* Frameworks */,
+				5E3220C1150D083100CCBE70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E3220C1150D083100CCBE70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E3220C0150D083100CCBE70 /* captureOSX.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E3220C2150D083100CCBE70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EC23616151A5B0800F3FDA7 /* ApplicationServices.framework */,
+				5EC23614151A5A8300F3FDA7 /* CoreVideo.framework */,
+				5EC23612151A58C800F3FDA7 /* QTKit.framework */,
+				5E32214C150D13E700CCBE70 /* Adobe AIR.framework */,
+				5E3220C3150D083100CCBE70 /* Cocoa.framework */,
+				5EAE35861524E8990092DE12 /* Foundation.framework */,
+				5E3220C5150D083100CCBE70 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E3220C5150D083100CCBE70 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E3220C6150D083100CCBE70 /* AppKit.framework */,
+				5E3220C7150D083100CCBE70 /* CoreData.framework */,
+				5E3220C8150D083100CCBE70 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5E3220C9150D083100CCBE70 /* capture */ = {
+			isa = PBXGroup;
+			children = (
+				5E3220CA150D083100CCBE70 /* Supporting Files */,
+			);
+			path = capture;
+			sourceTree = "<group>";
+		};
+		5E3220CA150D083100CCBE70 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E3220CB150D083100CCBE70 /* captureOSX-Info.plist */,
+				5E3220CC150D083100CCBE70 /* InfoPlist.strings */,
+				5E3220CF150D083100CCBE70 /* captureOSX-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5EAE35881524E8990092DE12 /* captureIOS */ = {
+			isa = PBXGroup;
+			children = (
+				5EAE358B1524E8990092DE12 /* captureIOS.h */,
+				5EAE358C1524E8990092DE12 /* captureIOS.m */,
+				5EAE35891524E8990092DE12 /* Supporting Files */,
+			);
+			path = captureIOS;
+			sourceTree = "<group>";
+		};
+		5EAE35891524E8990092DE12 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5EAE358A1524E8990092DE12 /* captureIOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5E3220BD150D083100CCBE70 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EAE35741524E5FB0092DE12 /* Capture.h in Headers */,
+				5EAE35761524E5FB0092DE12 /* CaptureConfig.h in Headers */,
+				5EAE35781524E5FB0092DE12 /* CaptureSurface.h in Headers */,
+				5EAE357A1524E5FB0092DE12 /* CCapture.h in Headers */,
+				5EAE357B1524E5FB0092DE12 /* CCaptureConfig.h in Headers */,
+				5EAE357C1524E5FB0092DE12 /* FlashRuntimeExtensions.h in Headers */,
+				5EAE357F1524E6150092DE12 /* CaptureImplQtKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5E3220BF150D083100CCBE70 /* captureOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E3220D5150D083100CCBE70 /* Build configuration list for PBXNativeTarget "captureOSX" */;
+			buildPhases = (
+				5E3220BB150D083100CCBE70 /* Sources */,
+				5E3220BC150D083100CCBE70 /* Frameworks */,
+				5E3220BD150D083100CCBE70 /* Headers */,
+				5E3220BE150D083100CCBE70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = captureOSX;
+			productName = capture;
+			productReference = 5E3220C0150D083100CCBE70 /* captureOSX.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E3220B6150D083100CCBE70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 5E3220B9150D083100CCBE70 /* Build configuration list for PBXProject "captureOSX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5E3220B4150D083100CCBE70;
+			productRefGroup = 5E3220C1150D083100CCBE70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E3220BF150D083100CCBE70 /* captureOSX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E3220BE150D083100CCBE70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E3220CE150D083100CCBE70 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E3220BB150D083100CCBE70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EAE35731524E5FB0092DE12 /* Capture.cpp in Sources */,
+				5EAE35751524E5FB0092DE12 /* CaptureANE.c in Sources */,
+				5EAE35771524E5FB0092DE12 /* CaptureSurface.cpp in Sources */,
+				5EAE35791524E5FB0092DE12 /* CCapture.cpp in Sources */,
+				5EAE35801524E6150092DE12 /* CaptureImplQtKit.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5E3220CC150D083100CCBE70 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E3220CD150D083100CCBE70 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E3220D3150D083100CCBE70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fvisibility=hidden";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5E3220D4150D083100CCBE70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-fvisibility=hidden";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5E3220D6150D083100CCBE70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/volumes/work/AdobeAIRSDK/runtimes/air/mac\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "capture/captureOSX-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
+				INFOPLIST_FILE = "capture/captureOSX-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../runtimes/air/mac @executable_path/../Frameworks /Library/Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				OTHER_CFLAGS = "-fvisibility=hidden";
+				OTHER_CPLUSPLUSFLAGS = "-fvisibility=hidden";
+				OTHER_LDFLAGS = (
+					"-flat_namespace",
+					"-weak_framework",
+					"\"Adobe AIR\"",
+				);
+				PRODUCT_NAME = captureOSX;
+				USER_HEADER_SEARCH_PATHS = "/Library/Frameworks/Adobe\\ AIR.framework/Versions/1.0";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		5E3220D7150D083100CCBE70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/volumes/work/AdobeAIRSDK/runtimes/air/mac\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "capture/captureOSX-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
+				INFOPLIST_FILE = "capture/captureOSX-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../runtimes/air/mac @executable_path/../Frameworks /Library/Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				OTHER_CFLAGS = "-fvisibility=hidden";
+				OTHER_CPLUSPLUSFLAGS = "-fvisibility=hidden";
+				OTHER_LDFLAGS = (
+					"-flat_namespace",
+					"-weak_framework",
+					"\"Adobe AIR\"",
+				);
+				PRODUCT_NAME = captureOSX;
+				USER_HEADER_SEARCH_PATHS = "/Library/Frameworks/Adobe\\ AIR.framework/Versions/1.0";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E3220B9150D083100CCBE70 /* Build configuration list for PBXProject "captureOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E3220D3150D083100CCBE70 /* Debug */,
+				5E3220D4150D083100CCBE70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E3220D5150D083100CCBE70 /* Build configuration list for PBXNativeTarget "captureOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E3220D6150D083100CCBE70 /* Debug */,
+				5E3220D7150D083100CCBE70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E3220B6150D083100CCBE70 /* Project object */;
+}

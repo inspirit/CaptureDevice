@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<platform xmlns="http://ns.adobe.com/air/extension/3.1">
+
+<!-- Adobe AIR Platform Descriptor File Template.
+
+	Specifies iOS specific options for AIR extensions.
+
+	xmlns - The Adobe AIR namespace: http://ns.adobe.com/air/application/3.1
+		The last segment of the namespace specifies the version 
+		of the AIR runtime required for this application to run.
+-->
+
+	<!-- Description. May have multiple values for each language. Optional. -->
+	<!-- <description> </description> -->
+
+	<!-- Copyright information. Optional. -->
+	<!-- <copyright> </copyright> -->
+
+	<!-- The version of iOS SDK that the app should be linked with. Optional. -->
+	<sdkVersion>5.1</sdkVersion>
+
+	<!-- Options that should be passed to the linker. Optional. -->
+	<linkerOptions>
+		<option>-ios_version_min 4.3</option>
+		<option>-framework AVFoundation</option> 
+		<option>-framework CoreGraphics</option> 
+		<option>-framework UIKit</option> 
+		<option>-framework AssetsLibrary</option> 
+		<!--option>-liconv</option> -->
+	</linkerOptions>
+
+</platform>
