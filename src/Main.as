@@ -10,8 +10,8 @@ package
     import flash.geom.Point;
     import flash.text.TextField;
     import flash.text.TextFormat;
-    import ru.inspirit.asfeat.capture.CaptureDevice;
-    import ru.inspirit.asfeat.capture.CaptureDeviceInfo;
+    import ru.inspirit.capture.CaptureDevice;
+    import ru.inspirit.capture.CaptureDeviceInfo;
     
     /**
      * Simple Demo App
@@ -113,6 +113,9 @@ package
                 {
                     capt = new CaptureDevice(dev.name, 320, 240);
                     capt.addEventListener('CAPTURE_DEVICE_LOST', onDeviceLost);
+					
+					// setup for specific data
+					capt.setupForDataType(CaptureDevice.GET_FRAME_BITMAP);
                     
                     lab = createCaptLab(capt);
 
@@ -204,20 +207,6 @@ package
                     pt.y = 240*(i>>1);
                     
                     scr_bmp.copyPixels(capt.bmp, capt.bmp.rect, pt);
-                    /*
-                    var raw:ByteArray = capt.raw;
-                    raw.position = 0;
-                    var size:int = capt.width * capt.height;
-                    var cols:Vector.<uint> = new Vector.<uint>(capt.width * capt.height);
-                    for (var j:int = 0; j < size; ++j)
-                    {
-                        var _r:uint = raw.readUnsignedByte();
-                        var _g:uint = raw.readUnsignedByte();
-                        var _b:uint = raw.readUnsignedByte();
-                        cols[j] = _r << 16 | _g << 8 | _b;
-                    }
-                    scr_bmp.setVector(new Rectangle(pt.x + 320, pt.y, capt.width, capt.height), cols);
-                    */
                     
                     lab = captLabs[i];
                     lab.x = pt.x;
