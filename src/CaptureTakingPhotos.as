@@ -163,8 +163,24 @@ package
             try
             {
                 // u can change desired photo quality
-                capture = new CaptureDevice(dev.name, streamW, streamH, streamFPS, 
+                if (Capabilities.manufacturer.toLowerCase().indexOf('android') != -1)
+                {
+                    capture = new CaptureDevice(dev.name, streamW, streamH, streamFPS, 
                                                 CaptureDevice.ANDROID_STILL_IMAGE_QUALITY_BEST);
+                }
+                else 
+                {
+                    // i assume we are on iOS
+                    // here things are more complicated:
+                    // iOS doesnt allow to set photo quility in separate from preview camera stream
+                    // so to get the optimal setup for iOS photo shooting we do a trick
+                    // internally i setup that if u request ZERO width frame it will setup preview
+                    // to photo quality and it is the best quality available
+                    // and the problem is that preview video stream also runs at maximum available size
+                    // on new iPad it is !!! 2048x1536 !!! i would not recommend to render that
+                    // but as long as we use clipRect we can work it out by clipping input data
+                    capture = new CaptureDevice(dev.name, 0, streamH, streamFPS);
+                }
 
                 // result camera dimension may be different from requested
                 streamW = capture.width;
