@@ -1,0 +1,5 @@
+//
+// Prefix header for all source files of the 'capture' target in the 'capture' project
+//
+
+#define __ASSERTMACROS__

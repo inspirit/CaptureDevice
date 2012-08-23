@@ -1,0 +1,5 @@
+//
+// Prefix header for all source files of the 'ASFEAT' target in the 'ASFEAT' project
+//
+
+#define __ASSERTMACROS__
